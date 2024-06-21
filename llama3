@@ -1,0 +1,37 @@
+# Setting Up a LLM Locally with Ollama and LLaMA 3
+
+This tutorial will guide you through the steps to set up a custom Large Language Model (LLM) locally using Ollama and LLaMA 3. By the end of this guide, you will have a functional LLM running on your machine.
+
+## Prerequisites
+
+Before you begin, make sure you have the following:
+
+1. A machine with a modern GPU or CPU.
+2. Basic knowledge of the command-line interface.
+
+## Step 1: Download and Install Ollama
+
+1. Go to the [Ollama download page](https://ollama.com/download) and download Ollama.
+2. Follow the installation instructions provided on the website.
+
+## Step 2: Verify Installation
+
+Once the installation is complete, open your terminal and check if Ollama is installed correctly by typing:
+
+    ```sh
+    ollama --version
+    ```
+
+You should see the version number of Ollama printed in the terminal. This confirms that Ollama is installed correctly. If you encounter any issues or do not see the version number, please refer to the installation troubleshooting section on the Ollama website.
+
+If everything works as expected, let's pull the LLaMA 3 model by
+
+    ```sh
+    ollama pull llama3
+    ```
+
+Followed by starting the model right away
+
+    ```sh
+    ollama run llama3
+    ```
